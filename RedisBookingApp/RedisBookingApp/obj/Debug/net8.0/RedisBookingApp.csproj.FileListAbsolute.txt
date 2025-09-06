@@ -1,0 +1,15 @@
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\bin\Debug\net8.0\RedisBookingApp.exe
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\bin\Debug\net8.0\RedisBookingApp.deps.json
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\bin\Debug\net8.0\RedisBookingApp.runtimeconfig.json
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\bin\Debug\net8.0\RedisBookingApp.dll
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\bin\Debug\net8.0\RedisBookingApp.pdb
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.AssemblyInfoInputs.cache
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.AssemblyInfo.cs
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.csproj.CoreCompileInputs.cache
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.sourcelink.json
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.dll
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\refint\RedisBookingApp.dll
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.pdb
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\RedisBookingApp.genruntimeconfig.cache
+D:\GitHub\RedisBookingDemo\RedisBookingApp\RedisBookingApp\obj\Debug\net8.0\ref\RedisBookingApp.dll
