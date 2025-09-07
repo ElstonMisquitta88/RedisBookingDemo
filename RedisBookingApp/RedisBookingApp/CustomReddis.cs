@@ -22,7 +22,6 @@ public class CustomReddis
         var db = muxer.GetDatabase();
         return db;
     }
-
     public static void ReddisClose(IDatabase db)
     {
         var muxer = db.Multiplexer;
@@ -31,7 +30,6 @@ public class CustomReddis
             muxer.Close();
         }
     }
-
     public static void DeleteAllKeys(IDatabase db)
     {
         var muxer = db.Multiplexer;

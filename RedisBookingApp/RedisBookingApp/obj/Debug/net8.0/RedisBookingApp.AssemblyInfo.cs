@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedisBookingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c11089d2db2940ac96aeb8a3635767615cc55a1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3715e142de1c96abf1700606f64af09396c2d63e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedisBookingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedisBookingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

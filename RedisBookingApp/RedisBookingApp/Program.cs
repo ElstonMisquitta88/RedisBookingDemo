@@ -2,6 +2,7 @@
 using RedisBookingApp;
 using StackExchange.Redis;
 using System.Linq.Expressions;
+using System.Net.Sockets;
 
 class Program
 {
@@ -25,6 +26,10 @@ class Program
 
 
             IDatabase db = CustomReddis.ReddisConnect(EndPoint, Port, User, Password);
+            CustomReddis.DeleteAllKeys(db);
+            Console.WriteLine("Connected to Redis.");
+
+            string doctorId = "doctor_123";
 
             bool exit = false;
             while (!exit)
@@ -33,6 +38,7 @@ class Program
                 Console.WriteLine("1.  Delete all keys");
                 Console.WriteLine("2.  Create booking slots for a doctor");
                 Console.WriteLine("3.  View all slots for a doctor");
+                Console.WriteLine("4.  Lock a slot for a Doctor");
                 Console.WriteLine("99. Exit");
                 Console.Write("Enter choice: ");
                 var input = Console.ReadLine();
@@ -46,12 +52,9 @@ class Program
                         Console.WriteLine("All keys deleted.");
                         break;
 
-                    //  return back to menu after each operation
-
 
                     case "2":
                         // Create Booking Slots for a Doctor
-                        string doctorId = "doctor_123";
                         string _doctorKey = BookingEngine.SetSlots(db, doctorId);
                         Console.WriteLine($"Slots created for {_doctorKey}.");
                         break;
@@ -59,25 +62,42 @@ class Program
 
                     case "3":
                         // View All Slots for a Doctor
-
-                        //Console.WriteLine("Enter Doctor ID");
-                        //string doctorId_View = Console.ReadLine();
-
-                        string doctorId_View = "doctor_123";
-                        
-
-                        var date = DateTime.Now.ToString("yyyyMMdd");
-                        var doctorKey = $"available_slots:{doctorId_View}:{date}";
-
-                        var allSlots = db.HashGetAll(doctorKey);
-                        Console.WriteLine($"Slots for {doctorKey}:");
+                        HashEntry[] allSlots = BookingEngine.GetAllSlots(db, doctorId);
                         foreach (var entry in allSlots)
                         {
                             Console.WriteLine($"{entry.Name} → {entry.Value}");
                         }
-
-
                         break;
+
+
+                    case "4":
+                        // Lock a slot for a Doctor
+                        Console.Write("Enter Slot ID : ");
+                        string? slotId = Console.ReadLine();
+
+                        Console.Write("Enter UserID : ");
+                        string? userId = Console.ReadLine();
+
+                        int locked = BookingEngine.LockBookingSlot(db, slotId!, doctorId, userId!);
+
+                        if (locked == 0)
+                        {
+                            Console.WriteLine($"Slot {slotId} is already locked by another user");
+                        }
+                        else if (locked == 2)
+                        {
+                            Console.WriteLine($"Slot {slotId} Already Booked");
+                        }
+                        else if (locked == -1)
+                        {
+                            Console.WriteLine($"Slot {slotId} does not Exists");
+                        }
+                        else if (locked == 1)
+                        {
+                            Console.WriteLine($"Lock acquired for slot {slotId} by {userId}");
+                        }
+                        break;
+                  
                     case "99":
                         // Exit Application
                         exit = true;

@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2678BAAA-88B9-4028-8553-EF2C4E7A7EB2}|RedisBookingApp\\RedisBookingApp.csproj|d:\\github\\redisbookingdemo\\redisbookingapp\\redisbookingapp\\bookingengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2678BAAA-88B9-4028-8553-EF2C4E7A7EB2}|RedisBookingApp\\RedisBookingApp.csproj|solutionrelative:redisbookingapp\\bookingengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2678BAAA-88B9-4028-8553-EF2C4E7A7EB2}|RedisBookingApp\\RedisBookingApp.csproj|d:\\github\\redisbookingdemo\\redisbookingapp\\redisbookingapp\\customreddis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2678BAAA-88B9-4028-8553-EF2C4E7A7EB2}|RedisBookingApp\\RedisBookingApp.csproj|solutionrelative:redisbookingapp\\customreddis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,15 +38,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomReddis.cs",
-              "DocumentMoniker": "D:\\GitHub\\RedisBookingDemo\\RedisBookingApp\\RedisBookingApp\\CustomReddis.cs",
-              "RelativeDocumentMoniker": "RedisBookingApp\\CustomReddis.cs",
-              "ToolTip": "D:\\GitHub\\RedisBookingDemo\\RedisBookingApp\\RedisBookingApp\\CustomReddis.cs",
-              "RelativeToolTip": "RedisBookingApp\\CustomReddis.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCIAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\RedisBookingDemo\\RedisBookingApp\\RedisBookingApp\\Program.cs",
+              "RelativeDocumentMoniker": "RedisBookingApp\\Program.cs",
+              "ToolTip": "D:\\GitHub\\RedisBookingDemo\\RedisBookingApp\\RedisBookingApp\\Program.cs",
+              "RelativeToolTip": "RedisBookingApp\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T06:36:42.025Z"
+              "WhenOpened": "2025-09-06T18:17:03.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,21 +57,9 @@
               "RelativeDocumentMoniker": "RedisBookingApp\\BookingEngine.cs",
               "ToolTip": "D:\\GitHub\\RedisBookingDemo\\RedisBookingApp\\RedisBookingApp\\BookingEngine.cs",
               "RelativeToolTip": "RedisBookingApp\\BookingEngine.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAIAwwCcAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAswFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T06:27:42.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\GitHub\\RedisBookingDemo\\RedisBookingApp\\RedisBookingApp\\Program.cs",
-              "RelativeDocumentMoniker": "RedisBookingApp\\Program.cs",
-              "ToolTip": "D:\\GitHub\\RedisBookingDemo\\RedisBookingApp\\RedisBookingApp\\Program.cs",
-              "RelativeToolTip": "RedisBookingApp\\Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T18:17:03.277Z",
+              "WhenOpened": "2025-09-07T06:27:42.076Z",
               "EditorCaption": ""
             }
           ]
