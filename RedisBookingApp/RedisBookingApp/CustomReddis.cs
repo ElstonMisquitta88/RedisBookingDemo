@@ -22,4 +22,30 @@ public class CustomReddis
         var db = muxer.GetDatabase();
         return db;
     }
+
+    public static void ReddisClose(IDatabase db)
+    {
+        var muxer = db.Multiplexer;
+        if (muxer != null && muxer.IsConnected)
+        {
+            muxer.Close();
+        }
+    }
+
+    public static void DeleteAllKeys(IDatabase db)
+    {
+        var muxer = db.Multiplexer;
+        var endpoints = muxer.GetEndPoints();
+        foreach (var endpoint in endpoints)
+        {
+            var server = muxer.GetServer(endpoint);
+            var keys = server.Keys();
+            foreach (var key in keys)
+            {
+                db.KeyDelete(key);
+            }
+        }
+    }
+
+
 }
