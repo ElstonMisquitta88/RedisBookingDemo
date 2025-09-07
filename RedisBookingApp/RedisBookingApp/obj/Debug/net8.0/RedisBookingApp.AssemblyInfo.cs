@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6cfa7c62-1bb0-4d1c-a438-55bf6f3b71b6")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedisBookingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27d5072ade2afd4942bce68e49c1fe10093e937f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27f0352ce8dec377a0f4358c6f87db17938fffe1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedisBookingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedisBookingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

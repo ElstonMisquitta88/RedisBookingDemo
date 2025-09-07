@@ -5,6 +5,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>6cfa7c62-1bb0-4d1c-a438-55bf6f3b71b6</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+    <PackageReference Include="StackExchange.Redis" Version="2.9.11" />
+  </ItemGroup>
 
 </Project>
